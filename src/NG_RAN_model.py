@@ -302,23 +302,23 @@ def read_topology_T2():
 def DRC_structure_T1():
     #create the DRC's and the set of DRC's
     #DRC1 = 1 DRC2 = 2, DRC4 = 7 and DRC5 = 8 are DRC's that need 3 RC's
-    DRC1 = DRC(1, 0.49, 2.058, 2.352, 0.01, 0.01, 0.01, [1], [2, 3, 4, 5, 6], [7, 8], 10, 10, 0.25, 3, 5.4, 17.4)
-    DRC2 = DRC(2, 0.98, 1.568, 2.352, 0.01, 0.01, 0.01, [1, 2], [3, 4, 5, 6], [7, 8], 10, 10, 0.25, 3, 5.4, 17.4)
-    DRC4 = DRC(4, 0.49, 1.225, 3.185, 0.01, 0.01, 0.01, [1], [2, 3, 4, 5], [6, 7, 8], 10, 10, 0.25, 3, 5.4, 5.6)
-    DRC5 = DRC(5, 0.98, 0.735, 3.185, 0.01, 0.01, 0.01, [1, 2], [3, 4, 5], [6, 7, 8], 10, 10, 0.25, 3, 5.4, 5.6)
+    DRC1 = DRC(1, 0.49, 2.058, 2.352, 0.01, 0.01, 0.01, ['f8'], ['f7', 'f6', 'f5', 'f4', 'f3', 'f2'], ['f1', 'f0'], 10, 10, 0.25, 3, 5.4, 17.4)
+    DRC2 = DRC(2, 0.98, 1.568, 2.352, 0.01, 0.01, 0.01, ['f8', 'f7'], ['f6', 'f5', 'f4', 'f3', 'f2'], ['f1', 'f0'], 10, 10, 0.25, 3, 5.4, 17.4)
+    DRC4 = DRC(4, 0.49, 1.225, 3.185, 0.01, 0.01, 0.01, ['f8'], ['f7', 'f6', 'f5', 'f4', 'f3'], ['f2', 'f1', 'f0'], 10, 10, 0.25, 3, 5.4, 5.6)
+    DRC5 = DRC(5, 0.98, 0.735, 3.185, 0.01, 0.01, 0.01, ['f8', 'f7'], ['f6', 'f5', 'f4', 'f3'], ['f2', 'f1', 'f0'], 10, 10, 0.25, 3, 5.4, 5.6)
 
     # DRC6 = 12 DRC7 = 13 DRC9 = 18 and DRC 10 = 17 are DRC's that need 2 RC's
-    DRC6 = DRC(6, 0, 0.49, 4.41, 0, 0.01, 0.01, [0], [1], [2, 3, 4, 5, 6, 7, 8], 0, 10, 10, 0, 3, 5.4)
-    DRC7 = DRC(7, 0, 3, 3.92, 0, 0.01, 0.01, [0], [1, 2], [3, 4, 5, 6, 7, 8], 0, 10, 10, 0, 3, 5.4)
-    DRC9 = DRC(9, 0, 2.54, 2.354, 0, 0.01, 0.01, [0], [1, 2, 3, 4, 5, 6], [7, 8], 0, 10, 0.25, 0, 3, 17.4)
-    DRC10 = DRC(10, 0, 1.71, 3.185, 0, 0.01, 0.01, [0], [1, 2, 3, 4, 5], [6, 7, 8], 0, 10, 0.25, 0, 3, 5.6)
+    DRC6 = DRC(6, 0, 0.49, 4.41, 0, 0.01, 0.01, [0], ['f8'], ['f7', 'f6', 'f5', 'f4', 'f3', 'f2', 'f1', 'f0'], 0, 10, 10, 0, 3, 5.4)
+    DRC7 = DRC(7, 0, 3, 3.92, 0, 0.01, 0.01, [0], ['f8', 'f7'], ['f6', 'f5', 'f4', 'f3', 'f2', 'f1', 'f0'], 0, 10, 10, 0, 3, 5.4)
+    DRC9 = DRC(9, 0, 2.54, 2.354, 0, 0.01, 0.01, [0], ['f8', 'f7', 'f6', 'f5', 'f4', 'f3', 'f2'], ['f1', 'f0'], 0, 10, 0.25, 0, 3, 17.4)
+    DRC10 = DRC(10, 0, 1.71, 3.185, 0, 0.01, 0.01, [0], ['f8', 'f7', 'f6', 'f5', 'f4', 'f3'], ['f2', 'f1', 'f0'], 0, 10, 0.25, 0, 3, 5.6)
 
     #DRC8 = 19 is the D-RAN split, so need just 1 RC
-    DRC8 = DRC(8, 0, 0, 4.9, 0, 0, 0.01, [0], [0], [1, 2, 3, 4, 5, 6, 7, 8], 0, 0, 10, 0, 0, 3)
+    DRC8 = DRC(8, 0, 0, 4.9, 0, 0, 0.01, [0], [0], ['f8', 'f7', 'f6', 'f5', 'f4', 'f3', 'f2', 'f1', 'f0'], 0, 0, 10, 0, 0, 3)
 
     #set of DRC's
     #DRCs = {8: DRC8}
-    DRCs = {1: DRC1, 2: DRC2, 4: DRC4, 5: DRC5, 6: DRC6, 7: DRC7, 8: DRC8, 9:DRC9, 10:DRC10}
+    DRCs = {1: DRC1, 2: DRC2, 4: DRC4, 5: DRC5, 6: DRC6, 7: DRC7, 8: DRC8, 9: DRC9, 10: DRC10}
 
     return DRCs
 
@@ -600,17 +600,18 @@ def run_NG_RAN_model_fase_2(FO_fase_1):
 
     # create the set of O's (functional splits)
     # O's(id, O_cpu, O_ram)
-    O1 = FS(1, 2, 2)
-    O2 = FS(2, 2, 2)
-    O3 = FS(3, 2, 2)
-    O4 = FS(4, 2, 2)
-    O5 = FS(5, 2, 2)
-    O6 = FS(6, 2, 2)
-    O7 = FS(7, 2, 2)
-    O8 = FS(8, 2, 2)
+    O1 = FS('f8', 2, 2)
+    O2 = FS('f7', 2, 2)
+    O3 = FS('f6', 2, 2)
+    O4 = FS('f5', 2, 2)
+    O5 = FS('f4', 2, 2)
+    O6 = FS('f3', 2, 2)
+    O7 = FS('f2', 2, 2)
+    O8 = FS('f1', 2, 2)
+    O9 = FS('f0', 2, 2)
 
     # set of O's
-    conj_Fs = {1: O1, 2: O2, 3: O3, 4: O4, 5: O5, 6: O6}
+    conj_Fs = {'f8': O1, 'f7': O2, 'f6': O3, 'f5': O4, 'f4': O5, 'f3': O6, 'f2': O7}
 
     # create the fase 1 model
     mdl = Model(name='NGRAN Problem2', log_output=True)
@@ -729,7 +730,7 @@ def run_NG_RAN_model_fase_2(FO_fase_1):
     disp_Fs = {}
 
     for rc in rcs:
-        disp_Fs[rc] = {"O1": 0, "O2": 0, "O3": 0, "O4": 0, "O5": 0, "O6": 0, "O7": 0, "O8": 0}
+        disp_Fs[rc] = {'f8': 0, 'f7': 0, 'f6': 0, 'f5': 0, 'f4': 0, 'f3': 0, 'f2': 0, 'f1': 0, 'f0': 0}
 
     for it in i:
         for rc in rcs:
@@ -741,7 +742,7 @@ def run_NG_RAN_model_fase_2(FO_fase_1):
                         for o in Fs:
                             if o != 0:
                                 dct = disp_Fs[rc]
-                                dct["O{}".format(o)] += 1
+                                dct["{}".format(o)] += 1
                                 disp_Fs[rc] = dct
 
                     if rc == seq[1]:
@@ -749,7 +750,7 @@ def run_NG_RAN_model_fase_2(FO_fase_1):
                         for o in Fs:
                             if o != 0:
                                 dct = disp_Fs[rc]
-                                dct["O{}".format(o)] += 1
+                                dct["{}".format(o)] += 1
                                 disp_Fs[rc] = dct
 
                     if rc == seq[2]:
@@ -757,7 +758,7 @@ def run_NG_RAN_model_fase_2(FO_fase_1):
                         for o in Fs:
                             if o != 0:
                                 dct = disp_Fs[rc]
-                                dct["O{}".format(o)] += 1
+                                dct["{}".format(o)] += 1
                                 disp_Fs[rc] = dct
 
     print("FO: {}".format(mdl.solution.get_objective_value()))
@@ -796,17 +797,18 @@ def run_NG_RAN_model_fase_3(FO_fase_1, FO_fase_2):
 
     # create the set of O's (functional splits)
     # O's(id, O_cpu, O_ram)
-    O1 = FS(1, 2, 2)
-    O2 = FS(2, 2, 2)
-    O3 = FS(3, 2, 2)
-    O4 = FS(4, 2, 2)
-    O5 = FS(5, 2, 2)
-    O6 = FS(6, 2, 2)
-    O7 = FS(7, 2, 2)
-    O8 = FS(8, 2, 2)
+    O1 = FS('f8', 2, 2)
+    O2 = FS('f7', 2, 2)
+    O3 = FS('f6', 2, 2)
+    O4 = FS('f5', 2, 2)
+    O5 = FS('f4', 2, 2)
+    O6 = FS('f3', 2, 2)
+    O7 = FS('f2', 2, 2)
+    O8 = FS('f1', 2, 2)
+    O9 = FS('f0', 2, 2)
 
     # set of O's
-    conj_Fs = {1: O1, 2: O2, 3: O3, 4: O4, 5: O5, 6: O6}
+    conj_Fs = {'f8': O1, 'f7': O2, 'f6': O3, 'f5': O4, 'f4': O5, 'f3': O6, 'f2': O7}
 
     #set of DRC priority
     DRC_p = {1: 4, 2: 1, 4: 6, 5: 5, 6: 10, 7: 9, 8: 25, 9: 7, 10: 8}
@@ -929,7 +931,7 @@ def run_NG_RAN_model_fase_3(FO_fase_1, FO_fase_2):
     disp_Fs = {}
 
     for rc in rcs:
-        disp_Fs[rc] = {"O1": 0, "O2": 0, "O3": 0, "O4": 0, "O5": 0, "O6": 0, "O7": 0, "O8": 0}
+        disp_Fs[rc] = {'f8': 0, 'f7': 0, 'f6': 0, 'f5': 0, 'f4': 0, 'f3': 0, 'f2': 0, 'f1': 0, 'f0': 0}
 
     for it in i:
         for rc in rcs:
@@ -941,7 +943,7 @@ def run_NG_RAN_model_fase_3(FO_fase_1, FO_fase_2):
                         for o in Fs:
                             if o != 0:
                                 dct = disp_Fs[rc]
-                                dct["O{}".format(o)] += 1
+                                dct["{}".format(o)] += 1
                                 disp_Fs[rc] = dct
 
                     if rc == seq[1]:
@@ -949,7 +951,7 @@ def run_NG_RAN_model_fase_3(FO_fase_1, FO_fase_2):
                         for o in Fs:
                             if o != 0:
                                 dct = disp_Fs[rc]
-                                dct["O{}".format(o)] += 1
+                                dct["{}".format(o)] += 1
                                 disp_Fs[rc] = dct
 
                     if rc == seq[2]:
@@ -957,7 +959,7 @@ def run_NG_RAN_model_fase_3(FO_fase_1, FO_fase_2):
                         for o in Fs:
                             if o != 0:
                                 dct = disp_Fs[rc]
-                                dct["O{}".format(o)] += 1
+                                dct["{}".format(o)] += 1
                                 disp_Fs[rc] = dct
 
     print("FO: {}".format(mdl.solution.get_objective_value()))
