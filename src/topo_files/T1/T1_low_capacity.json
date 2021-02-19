@@ -1,0 +1,634 @@
+{
+  "links": {
+    "N10--N3": {
+      "linkCapacity": "10",
+      "LinkDelay": "0,46215",
+      "source": {
+        "node": "N10"
+      },
+      "destination": {
+        "node": "N3"
+      }
+    },
+    "N11--N10": {
+      "linkCapacity": "10",
+      "LinkDelay": "0,9073",
+      "source": {
+        "node": "N11"
+      },
+      "destination": {
+        "node": "N10"
+      }
+    },
+    "N12--N11": {
+      "linkCapacity": "25",
+      "LinkDelay": "0,5887",
+      "source": {
+        "node": "N12"
+      },
+      "destination": {
+        "node": "N11"
+      }
+    },
+    "N13--N12": {
+      "linkCapacity": "25",
+      "LinkDelay": "0,65475",
+      "source": {
+        "node": "N13"
+      },
+      "destination": {
+        "node": "N12"
+      }
+    },
+    "N14--N13": {
+      "linkCapacity": "10",
+      "LinkDelay": "0,53835",
+      "source": {
+        "node": "N14"
+      },
+      "destination": {
+        "node": "N13"
+      }
+    },
+    "N15--N14": {
+      "linkCapacity": "10",
+      "LinkDelay": "0,51565",
+      "source": {
+        "node": "N15"
+      },
+      "destination": {
+        "node": "N14"
+      }
+    },
+    "N3--N15": {
+      "linkCapacity": "10",
+      "LinkDelay": "0,4927",
+      "source": {
+        "node": "N3"
+      },
+      "destination": {
+        "node": "N15"
+      }
+    },
+    "N5--N3": {
+      "linkCapacity": "10",
+      "LinkDelay": "0,4324",
+      "source": {
+        "node": "N5"
+      },
+      "destination": {
+        "node": "N3"
+      }
+    },
+    "N6--N5": {
+      "linkCapacity": "25",
+      "LinkDelay": "0,4447",
+      "source": {
+        "node": "N6"
+      },
+      "destination": {
+        "node": "N5"
+      }
+    },
+    "N7--N6": {
+      "linkCapacity": "25",
+      "LinkDelay": "0,51875",
+      "source": {
+        "node": "N7"
+      },
+      "destination": {
+        "node": "N6"
+      }
+    },
+    "N8--N7": {
+      "linkCapacity": "10",
+      "LinkDelay": "0,42765",
+      "source": {
+        "node": "N8"
+      },
+      "destination": {
+        "node": "N7"
+      }
+    },
+    "N9--N8": {
+      "linkCapacity": "25",
+      "LinkDelay": "0,41795",
+      "source": {
+        "node": "N9"
+      },
+      "destination": {
+        "node": "N8"
+      }
+    },
+    "N3--N9": {
+      "linkCapacity": "10",
+      "LinkDelay": "0,42875",
+      "source": {
+        "node": "N3"
+      },
+      "destination": {
+        "node": "N9"
+      }
+    },
+    "N4--N16": {
+      "linkCapacity": "10",
+      "LinkDelay": "0,69665",
+      "source": {
+        "node": "N4"
+      },
+      "destination": {
+        "node": "N16"
+      }
+    },
+    "N16--N17": {
+      "linkCapacity": "10",
+      "LinkDelay": "0,60725",
+      "source": {
+        "node": "N16"
+      },
+      "destination": {
+        "node": "N17"
+      }
+    },
+    "N17--N18": {
+      "linkCapacity": "10",
+      "LinkDelay": "0,80035",
+      "source": {
+        "node": "N17"
+      },
+      "destination": {
+        "node": "N18"
+      }
+    },
+    "N18--N19": {
+      "linkCapacity": "25",
+      "LinkDelay": "0,52605",
+      "source": {
+        "node": "N18"
+      },
+      "destination": {
+        "node": "N19"
+      }
+    },
+    "N19--N20": {
+      "linkCapacity": "25",
+      "LinkDelay": "0,4578",
+      "source": {
+        "node": "N19"
+      },
+      "destination": {
+        "node": "N20"
+      }
+    },
+    "N20--N21": {
+      "linkCapacity": "10",
+      "LinkDelay": "0,4233",
+      "source": {
+        "node": "N20"
+      },
+      "destination": {
+        "node": "N21"
+      }
+    },
+    "N21--N4": {
+      "linkCapacity": "10",
+      "LinkDelay": "0,4439",
+      "source": {
+        "node": "N21"
+      },
+      "destination": {
+        "node": "N4"
+      }
+    },
+    "N4--N22": {
+      "linkCapacity": "10",
+      "LinkDelay": "0,4208",
+      "source": {
+        "node": "N4"
+      },
+      "destination": {
+        "node": "N22"
+      }
+    },
+    "N22--N23": {
+      "linkCapacity": "10",
+      "LinkDelay": "0,41225",
+      "source": {
+        "node": "N22"
+      },
+      "destination": {
+        "node": "N23"
+      }
+    },
+    "N23--N24": {
+      "linkCapacity": "25",
+      "LinkDelay": "0,4175",
+      "source": {
+        "node": "N23"
+      },
+      "destination": {
+        "node": "N24"
+      }
+    },
+    "N24--N25": {
+      "linkCapacity": "25",
+      "LinkDelay": "0,43185",
+      "source": {
+        "node": "N24"
+      },
+      "destination": {
+        "node": "N25"
+      }
+    },
+    "N25--N26": {
+      "linkCapacity": "10",
+      "LinkDelay": "0,50025",
+      "source": {
+        "node": "N25"
+      },
+      "destination": {
+        "node": "N26"
+      }
+    },
+    "N26--N4": {
+      "linkCapacity": "10",
+      "LinkDelay": "0,4929",
+      "source": {
+        "node": "N26"
+      },
+      "destination": {
+        "node": "N4"
+      }
+    },
+    "N4--N27": {
+      "linkCapacity": "10",
+      "LinkDelay": "0,5381",
+      "source": {
+        "node": "N4"
+      },
+      "destination": {
+        "node": "N27"
+      }
+    },
+    "N27--N28": {
+      "linkCapacity": "10",
+      "LinkDelay": "0,5381",
+      "source": {
+        "node": "N27"
+      },
+      "destination": {
+        "node": "N28"
+      }
+    },
+    "N28--N29": {
+      "linkCapacity": "25",
+      "LinkDelay": "0,5446",
+      "source": {
+        "node": "N28"
+      },
+      "destination": {
+        "node": "N29"
+      }
+    },
+    "N29--N30": {
+      "linkCapacity": "25",
+      "LinkDelay": "0,54015",
+      "source": {
+        "node": "N29"
+      },
+      "destination": {
+        "node": "N30"
+      }
+    },
+    "N30--N31": {
+      "linkCapacity": "10",
+      "LinkDelay": "0,6715",
+      "source": {
+        "node": "N30"
+      },
+      "destination": {
+        "node": "N31"
+      }
+    },
+    "N31--N4": {
+      "linkCapacity": "10",
+      "LinkDelay": "0,7303",
+      "source": {
+        "node": "N31"
+      },
+      "destination": {
+        "node": "N4"
+      }
+    },
+    "N1--N32": {
+      "linkCapacity": "10",
+      "LinkDelay": "0,40945",
+      "source": {
+        "node": "N1"
+      },
+      "destination": {
+        "node": "N32"
+      }
+    },
+    "N32--N33": {
+      "linkCapacity": "10",
+      "LinkDelay": "0,4367",
+      "source": {
+        "node": "N32"
+      },
+      "destination": {
+        "node": "N33"
+      }
+    },
+    "N33--N34": {
+      "linkCapacity": "25",
+      "LinkDelay": "0,68665",
+      "source": {
+        "node": "N33"
+      },
+      "destination": {
+        "node": "N34"
+      }
+    },
+    "N34--N35": {
+      "linkCapacity": "25",
+      "LinkDelay": "0,5954",
+      "source": {
+        "node": "N34"
+      },
+      "destination": {
+        "node": "N35"
+      }
+    },
+    "N35--N36": {
+      "linkCapacity": "10",
+      "LinkDelay": "0,46425",
+      "source": {
+        "node": "N35"
+      },
+      "destination": {
+        "node": "N36"
+      }
+    },
+    "N36--N37": {
+      "linkCapacity": "25",
+      "LinkDelay": "0,4607",
+      "source": {
+        "node": "N36"
+      },
+      "destination": {
+        "node": "N37"
+      }
+    },
+    "N37--N1": {
+      "linkCapacity": "10",
+      "LinkDelay": "0,4128",
+      "source": {
+        "node": "N37"
+      },
+      "destination": {
+        "node": "N1"
+      }
+    },
+    "N1--N38": {
+      "linkCapacity": "10",
+      "LinkDelay": "0,4222",
+      "source": {
+        "node": "N1"
+      },
+      "destination": {
+        "node": "N38"
+      }
+    },
+    "N38--N39": {
+      "linkCapacity": "10",
+      "LinkDelay": "0,40375",
+      "source": {
+        "node": "N38"
+      },
+      "destination": {
+        "node": "N39"
+      }
+    },
+    "N39--N40": {
+      "linkCapacity": "25",
+      "LinkDelay": "0,40755",
+      "source": {
+        "node": "N39"
+      },
+      "destination": {
+        "node": "N40"
+      }
+    },
+    "N40--N41": {
+      "linkCapacity": "10",
+      "LinkDelay": "0,4127",
+      "source": {
+        "node": "N40"
+      },
+      "destination": {
+        "node": "N41"
+      }
+    },
+    "N41--N42": {
+      "linkCapacity": "10",
+      "LinkDelay": "0,42585",
+      "source": {
+        "node": "N41"
+      },
+      "destination": {
+        "node": "N42"
+      }
+    },
+    "N42--N2": {
+      "linkCapacity": "10",
+      "LinkDelay": "0,4407",
+      "source": {
+        "node": "N42"
+      },
+      "destination": {
+        "node": "N2"
+      }
+    },
+    "N2--N43": {
+      "linkCapacity": "10",
+      "LinkDelay": "0,43645",
+      "source": {
+        "node": "N2"
+      },
+      "destination": {
+        "node": "N43"
+      }
+    },
+    "N43--N44": {
+      "linkCapacity": "25",
+      "LinkDelay": "0,4343",
+      "source": {
+        "node": "N43"
+      },
+      "destination": {
+        "node": "N44"
+      }
+    },
+    "N44--N45": {
+      "linkCapacity": "25",
+      "LinkDelay": "0,4277",
+      "source": {
+        "node": "N44"
+      },
+      "destination": {
+        "node": "N45"
+      }
+    },
+    "N45--N46": {
+      "linkCapacity": "25",
+      "LinkDelay": "0,41585",
+      "source": {
+        "node": "N45"
+      },
+      "destination": {
+        "node": "N46"
+      }
+    },
+    "N46--N1": {
+      "linkCapacity": "10",
+      "LinkDelay": "0,4177",
+      "source": {
+        "node": "N46"
+      },
+      "destination": {
+        "node": "N1"
+      }
+    },
+    "N2--N47": {
+      "linkCapacity": "10",
+      "LinkDelay": "0,50395",
+      "source": {
+        "node": "N2"
+      },
+      "destination": {
+        "node": "N47"
+      }
+    },
+    "N47--N48": {
+      "linkCapacity": "25",
+      "LinkDelay": "0,49395",
+      "source": {
+        "node": "N47"
+      },
+      "destination": {
+        "node": "N48"
+      }
+    },
+    "N48--N49": {
+      "linkCapacity": "10",
+      "LinkDelay": "0,47865",
+      "source": {
+        "node": "N48"
+      },
+      "destination": {
+        "node": "N49"
+      }
+    },
+    "N49--N50": {
+      "linkCapacity": "10",
+      "LinkDelay": "0,45075",
+      "source": {
+        "node": "N49"
+      },
+      "destination": {
+        "node": "N50"
+      }
+    },
+    "N50--N51": {
+      "linkCapacity": "10",
+      "LinkDelay": "0,417",
+      "source": {
+        "node": "N50"
+      },
+      "destination": {
+        "node": "N51"
+      }
+    },
+    "N51--N2": {
+      "linkCapacity": "10",
+      "LinkDelay": "0,4347",
+      "source": {
+        "node": "N51"
+      },
+      "destination": {
+        "node": "N2"
+      }
+    },
+    "N1--N2": {
+      "linkCapacity": "100",
+      "LinkDelay": "0,4",
+      "source": {
+        "node": "N1"
+      },
+      "destination": {
+        "node": "N2"
+      }
+    },
+    "N3--N1": {
+      "linkCapacity": "100",
+      "LinkDelay": "0,4553",
+      "source": {
+        "node": "N3"
+      },
+      "destination": {
+        "node": "N1"
+      }
+    },
+    "N3--N2": {
+      "linkCapacity": "100",
+      "LinkDelay": "0,4553",
+      "source": {
+        "node": "N3"
+      },
+      "destination": {
+        "node": "N2"
+      }
+    },
+    "N4--N1": {
+      "linkCapacity": "100",
+      "LinkDelay": "0,4296",
+      "source": {
+        "node": "N4"
+      },
+      "destination": {
+        "node": "N1"
+      }
+    },
+    "N4--N2": {
+      "linkCapacity": "100",
+      "LinkDelay": "0,4296",
+      "source": {
+        "node": "N4"
+      },
+      "destination": {
+        "node": "N2"
+      }
+    },
+    "N1--CN": {
+      "linkCapacity": "100",
+      "LinkDelay": "0,4",
+      "source": {
+        "node": "N1"
+      },
+      "destination": {
+        "node": "CN"
+      }
+    },
+    "N2--CN": {
+      "linkCapacity": "100",
+      "LinkDelay": "0,4",
+      "source": {
+        "node": "N2"
+      },
+      "destination": {
+        "node": "CN"
+      }
+    }
+  }
+}
