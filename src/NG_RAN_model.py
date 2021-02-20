@@ -576,6 +576,46 @@ def run_stage_1():
     for cr in disp_Fs:
         print(str(cr) + str(disp_Fs[cr]))
 
+    # with open("stage_1_solution.json", "w") as stage_1_result:
+    #     result_list = {"Solution": []}
+    #     for it in i:
+    #         if mdl.x[it].solution_value > 0:
+    #             result = {"RU_id": 0, "RU_DRC": 0, "CU_loc": 0, "DU_loc": 0, "RU_loc": 0, "path": []}
+    #             path_sol = []
+    #             sol_dsg = it[1]
+    #             ru_id = it[2]
+    #             if paths[it[0]].p1:
+    #                 for item in paths[it[0]].p1:
+    #                     path_sol.append(item)
+    #             if paths[it[0]].p2:
+    #                 for item in paths[it[0]].p2:
+    #                     path_sol.append(item)
+    #             if paths[it[0]].p3:
+    #                 for item in paths[it[0]].p3:
+    #                     path_sol.append(item)
+    #             result["path"] = path_sol
+    #             cu_loc = paths[it[0]].seq[0]
+    #             du_loc = paths[it[0]].seq[1]
+    #             ru_loc = paths[it[0]].seq[2]
+    #             result["RU_id"] = ru_id
+    #             if du_loc == 0:
+    #                 du_loc = ru_loc
+    #                 cu_loc = du_loc
+    #             elif cu_loc == 0 and it[1] > 8:
+    #                 cu_loc = du_loc
+    #             elif cu_loc == 0 and it[1] < 9:
+    #                 cu_loc = du_loc
+    #                 du_loc = ru_loc
+    #             result["RU_id"] = ru_id
+    #             result["RU_DRC"] = sol_dsg
+    #             result["CU_loc"] = cu_loc
+    #             result["DU_loc"] = du_loc
+    #             result["RU_loc"] = ru_loc
+    #             result["path"] = path_sol
+    #
+    #             result_list["Solution"].append(result)
+    #     json.dump(result_list, stage_1_result)
+
     global f1_vars
     for it in i:
         if mdl.x[it].solution_value > 0:
@@ -761,6 +801,46 @@ def run_stage_2(FO_Stage_1):
 
     for cr in disp_Fs:
         print(str(cr) + str(disp_Fs[cr]))
+
+    # with open("stage_2_solution.json", "w") as stage_2_result:
+    #     result_list = {"Solution": []}
+    #     for it in i:
+    #         if mdl.x[it].solution_value > 0:
+    #             result = {"RU_id": 0, "RU_DRC": 0, "CU_loc": 0, "DU_loc": 0, "RU_loc": 0, "path": []}
+    #             path_sol = []
+    #             sol_dsg = it[1]
+    #             ru_id = it[2]
+    #             if paths[it[0]].p1:
+    #                 for item in paths[it[0]].p1:
+    #                     path_sol.append(item)
+    #             if paths[it[0]].p2:
+    #                 for item in paths[it[0]].p2:
+    #                     path_sol.append(item)
+    #             if paths[it[0]].p3:
+    #                 for item in paths[it[0]].p3:
+    #                     path_sol.append(item)
+    #             result["path"] = path_sol
+    #             cu_loc = paths[it[0]].seq[0]
+    #             du_loc = paths[it[0]].seq[1]
+    #             ru_loc = paths[it[0]].seq[2]
+    #             result["RU_id"] = ru_id
+    #             if du_loc == 0:
+    #                 du_loc = ru_loc
+    #                 cu_loc = du_loc
+    #             elif cu_loc == 0 and it[1] > 8:
+    #                 cu_loc = du_loc
+    #             elif cu_loc == 0 and it[1] < 9:
+    #                 cu_loc = du_loc
+    #                 du_loc = ru_loc
+    #             result["RU_id"] = ru_id
+    #             result["RU_DRC"] = sol_dsg
+    #             result["CU_loc"] = cu_loc
+    #             result["DU_loc"] = du_loc
+    #             result["RU_loc"] = ru_loc
+    #             result["path"] = path_sol
+    #
+    #             result_list["Solution"].append(result)
+    #     json.dump(result_list, stage_2_result)
 
     global f2_vars
     for it in i:
@@ -957,6 +1037,46 @@ def run_stage_3(FO_Stage_1, FO_Stage_2):
 
     for cr in disp_Fs:
         print(str(cr) + str(disp_Fs[cr]))
+
+    with open("stage_3_solution.json", "w") as stage_3_result:
+        result_list = {"Solution": []}
+        for it in i:
+            if mdl.x[it].solution_value > 0:
+                result = {"RU_id": 0, "RU_DRC": 0, "CU_loc": 0, "DU_loc": 0, "RU_loc": 0, "path": []}
+                path_sol = []
+                sol_dsg = it[1]
+                ru_id = it[2]
+                if paths[it[0]].p1:
+                    for item in paths[it[0]].p1:
+                        path_sol.append(item)
+                if paths[it[0]].p2:
+                    for item in paths[it[0]].p2:
+                        path_sol.append(item)
+                if paths[it[0]].p3:
+                    for item in paths[it[0]].p3:
+                        path_sol.append(item)
+                result["path"] = path_sol
+                cu_loc = paths[it[0]].seq[0]
+                du_loc = paths[it[0]].seq[1]
+                ru_loc = paths[it[0]].seq[2]
+                result["RU_id"] = ru_id
+                if du_loc == 0:
+                    du_loc = ru_loc
+                    cu_loc = du_loc
+                elif cu_loc == 0 and it[1] > 8:
+                    cu_loc = du_loc
+                elif cu_loc == 0 and it[1] < 9:
+                    cu_loc = du_loc
+                    du_loc = ru_loc
+                result["RU_id"] = ru_id
+                result["RU_DRC"] = sol_dsg
+                result["CU_loc"] = cu_loc
+                result["DU_loc"] = du_loc
+                result["RU_loc"] = ru_loc
+                result["path"] = path_sol
+
+                result_list["Solution"].append(result)
+        json.dump(result_list, stage_3_result)
 
 
 if __name__ == '__main__':
