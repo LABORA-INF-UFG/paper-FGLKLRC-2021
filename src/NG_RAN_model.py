@@ -452,7 +452,7 @@ def run_stage_1():
     # Creates the Stage 1 model
     mdl = Model(name='NGRAN Problem', log_output=True)
     # Set the GAP value (the model execution stop when GAP hits the value -- Default: 0%)
-    mdl.parameters.mip.tolerances.mipgap = 0.10
+    mdl.parameters.mip.tolerances.mipgap = 0
 
     # Tuple used by the decision variable management
     i = [(p, d, b) for p in paths for d in DRCs for b in rus if paths[p].seq[2] == rus[b].CR]
