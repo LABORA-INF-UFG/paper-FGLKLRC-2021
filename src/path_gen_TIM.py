@@ -48,7 +48,7 @@ class Graph:
         self.printAllPathsUtil(s, d, visited, path)
 
 
-with open('low_capacity.json') as json_file:
+with open('topo_files/T1/T1_low_capacity.json') as json_file:
     data = json.load(json_file)
 
     g = Graph(100)

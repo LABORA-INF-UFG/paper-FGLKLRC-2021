@@ -90,7 +90,7 @@ def read_topology_T1():
     Implements the topology from reading the json file and creates the main structure that is used by the stages of the model.
     :rtype: Inserts topology data into global structures, so the method has no return
     """
-    with open('topo_files/test_file_links.json') as json_file:
+    with open('topo_files/T1/T1_high_capacity.json') as json_file:
         data = json.load(json_file)
 
         # Creates the set of links with delay and capacity read by the json file, stores the links in the global list "links"
@@ -125,7 +125,7 @@ def read_topology_T1():
                 links.append((destination_node, source_node))
 
         # Creates the set of CRs with RAM and CPU in a global list "crs" -- crs[0] is the network Core node
-        with open('RU_0_1_high.json') as json_file:
+        with open('topo_files/T1/R1_high.json') as json_file:
             data = json.load(json_file)
             json_nodes = data["nodes"]
             for item in json_nodes:
@@ -366,7 +366,7 @@ def RU_location_T1():
     rus = {}
     count = 1
     #Reads the topology file with RUs locations
-    with open('RU_0_1_high.json') as json_file:
+    with open('topo_files/T1/R1_high.json') as json_file:
         data = json.load(json_file)
         json_crs = data["nodes"]
         for item in json_crs:
@@ -427,14 +427,14 @@ def run_stage_1():
     print("-----------------------------------------------------------------------------------------------------------")
     alocation_time_start = time.time()
 
-    # read_topology_T1()
-    read_topology_T2()
+    read_topology_T1()
+    # read_topology_T2()
 
-    # DRCs = DRC_structure_T1()
-    DRCs = DRC_structure_T2()
+    DRCs = DRC_structure_T1()
+    # DRCs = DRC_structure_T2()
 
-    # rus = RU_location_T1()
-    rus = RU_location_T2()
+    rus = RU_location_T1()
+    # rus = RU_location_T2()
 
     # Creates the set of Fs (functional splits)
     # Fs(id, f_cpu, f_ram)
@@ -635,14 +635,14 @@ def run_stage_2(FO_Stage_1):
     print("-----------------------------------------------------------------------------------------------------------")
     alocation_time_start = time.time()
 
-    # read_topology_T1()
-    read_topology_T2()
+    read_topology_T1()
+    # read_topology_T2()
 
-    # DRCs = DRC_structure_T1()
-    DRCs = DRC_structure_T2()
+    DRCs = DRC_structure_T1()
+    # DRCs = DRC_structure_T2()
 
-    # rus = RU_location_T1()
-    rus = RU_location_T2()
+    rus = RU_location_T1()
+    # rus = RU_location_T2()
 
     # Creates the set of Fs (functional splits)
     # Fs(id, f_cpu, f_ram)
@@ -861,14 +861,14 @@ def run_stage_3(FO_Stage_1, FO_Stage_2):
     print("-----------------------------------------------------------------------------------------------------------")
     alocation_time_start = time.time()
 
-    # read_topology_T1()
-    read_topology_T2()
+    read_topology_T1()
+    # read_topology_T2()
 
-    # DRCs = DRC_structure_T1()
-    DRCs = DRC_structure_T2()
+    DRCs = DRC_structure_T1()
+    # DRCs = DRC_structure_T2()
 
-    # rus = RU_location_T1()
-    rus = RU_location_T2()
+    rus = RU_location_T1()
+    # rus = RU_location_T2()
 
     # Creates the set of Fs (functional splits)
     # Fs(id, f_cpu, f_ram)
