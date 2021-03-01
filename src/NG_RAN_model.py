@@ -125,7 +125,7 @@ def read_topology_T1():
                 links.append((destination_node, source_node))
 
         # Creates the set of CRs with RAM and CPU in a global list "crs" -- crs[0] is the network Core node
-        with open('topo_files/T1/R1_high.json') as json_file:
+        with open('topo_files/T1/F1_high.json') as json_file:
             data = json.load(json_file)
             json_nodes = data["nodes"]
             for item in json_nodes:
@@ -366,7 +366,7 @@ def RU_location_T1():
     rus = {}
     count = 1
     #Reads the topology file with RUs locations
-    with open('topo_files/T1/R1_high.json') as json_file:
+    with open('topo_files/T1/F1_high.json') as json_file:
         data = json.load(json_file)
         json_crs = data["nodes"]
         for item in json_crs:

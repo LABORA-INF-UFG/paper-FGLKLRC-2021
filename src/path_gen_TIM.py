@@ -6,7 +6,8 @@ paths = []
 
 k = 0
 
-k_stop = int(input("k-paths: "))
+#k_stop = int(input("k-paths: "))
+k_stop = 4
 
 class Graph:
 
