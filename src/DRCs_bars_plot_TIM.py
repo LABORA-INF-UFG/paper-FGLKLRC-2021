@@ -5,18 +5,19 @@ from matplotlib.lines import Line2D
 def plot_dsg_number():
     x = ['LCR1', 'RCR1', 'HCR1', ' ', 'LCF1', 'RCF1', 'HCF1']
     colors_list = ["", "darkgoldenrod", "gold", "black", "midnightblue", "blue", "royalblue", "cornflowerblue", "darkgray", "lightgray", "brown"]
+    # ["", "mediumblue", "blue", "black", "royalblue", "cornflowerblue", "dimgray", "gray", "darkgray", "lightgray", "brown"]
 
     y = {}
 
-    y[5] = [0, 0, 0, 0, 0, 0, 9] #DSG 1 - 1
-    y[4] = [0, 17, 66, 0, 0, 21, 60] # DSG 2 - 2
-    y[7] = [0, 0, 0, 0, 14, 0, 0] # DSG 4 - 7
-    y[6] = [15, 15, 0, 0, 15, 18, 0] # DSG 5 - 8
-    y[9] = [0, 6, 0, 0, 17, 5, 4] # DSG 6 - 12
-    y[8] = [78, 45, 25, 0, 65, 47, 15] # DSG 7 - 13
-    y[10] = [8, 0, 0, 0, 15, 4, 0] # DSG 8 - DRAN
-    y[1] = [0, 9, 10, 0, 0, 18, 32] # DSG 9 - 18 - CRAN
-    y[2] = [0, 9, 0, 0, 0, 13, 6] # DSG 10 - 17 - CRAN
+    y[5] = [0, 0, 0, 0, 0, 0, 0] #DSG 1 - 1
+    y[4] = [0, 9, 25, 0, 0, 10, 30] # DSG 2 - 2
+    y[7] = [0, 0, 0, 0, 0, 0, 0] # DSG 4 - 7
+    y[6] = [0, 2, 0, 0, 0, 6, 4] # DSG 5 - 8
+    y[9] = [0, 0, 0, 0, 0, 0, 0] # DSG 6 - 12
+    y[8] = [27, 26, 9, 0, 29, 24, 13] # DSG 7 - 13
+    y[10] = [12, 0, 1, 0, 20, 3, 0] # DSG 8 - DRAN
+    y[1] = [0, 1, 3, 0, 0, 6, 2] # DSG 9 - 18 - CRAN
+    y[2] = [0, 1, 1, 0, 0, 0, 0] # DSG 10 - 17 - CRAN
 
     peso = [0, 1, 4, 0, 5, 6, 7, 8, 9, 10, 25]
 
@@ -43,7 +44,7 @@ def plot_dsg_number():
         ant = i
 
     fig, ax = plt.subplots()
-    plt.ylim(0, 160)
+    plt.ylim(0, 65)
 
     for i in y:
         ax.bar(x, y[i], width=.7, color=colors_list[i], bottom=prev[i])
@@ -60,15 +61,15 @@ def plot_dsg_number():
 
     plt.rcParams.update({'font.size': 13})
 
-    legend_elements = [Line2D([0], [0], color='brown', lw=4, label='D-RAN (1)'),
+    legend_elements = [Line2D([0], [0], color='b', lw=4, label='NG-RAN (3)'),
                        Line2D([0], [0], color='gray', lw=4, label='NG-RAN (2)'),
-                       Line2D([0], [0], color='b', lw=4, label='NG-RAN (3)'),
-                       Line2D([0], [0], color='darkgoldenrod', lw=4, label='C-RAN (2)')]
+                       Line2D([0], [0], color='darkgoldenrod', lw=4, label='C-RAN'),
+                       Line2D([0], [0], color='brown', lw=4, label='D-RAN')]
 
     ax.legend(handles=legend_elements, loc="upper left")
     ax.yaxis.grid(color='gray', linestyle='--', linewidth=0.5)
 
-    plt.savefig("DRCs_128.png")
+    plt.savefig("DRCs.png")
     plt.show()
 
 
@@ -94,7 +95,7 @@ def plot_dsg_by_tam():
 
     plt.ylim(0, 100)
 
-    plt.savefig("agg_lvl_128.png")
+    plt.savefig("agg_lvl.png")
     plt.show()
 
 

@@ -60,10 +60,10 @@ def plot_dsg_number():
 
     plt.rcParams.update({'font.size': 13})
 
-    legend_elements = [Line2D([0], [0], color='brown', lw=4, label='D-RAN (1)'),
+    legend_elements = [Line2D([0], [0], color='b', lw=4, label='NG-RAN (3)'),
                        Line2D([0], [0], color='gray', lw=4, label='NG-RAN (2)'),
-                       Line2D([0], [0], color='b', lw=4, label='NG-RAN (3)'),
-                       Line2D([0], [0], color='darkgoldenrod', lw=4, label='C-RAN (2)')]
+                       Line2D([0], [0], color='darkgoldenrod', lw=4, label='C-RAN'),
+                       Line2D([0], [0], color='brown', lw=4, label='D-RAN')]
 
     ax.legend(handles=legend_elements, loc="upper left")
     ax.yaxis.grid(color='gray', linestyle='--', linewidth=0.5)

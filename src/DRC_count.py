@@ -1,6 +1,6 @@
 import json
 
-with open("stage_3_solution_HCF1.json") as solution_file:
+with open("stage_3_solution_T1_HCF1.json") as solution_file:
     json_obj = json.load(solution_file)
     solution = json_obj["Solution"]
 
