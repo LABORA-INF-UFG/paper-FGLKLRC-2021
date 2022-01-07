@@ -49,7 +49,7 @@ class Graph:
         self.printAllPathsUtil(s, d, visited, path)
 
 
-with open('topo_files/test_file_links.json') as json_file:
+with open('topo_files/T2/10_CRs_links_HC.json') as json_file:
     data = json.load(json_file)
 
     g = Graph(600)
@@ -60,7 +60,6 @@ with open('topo_files/test_file_links.json') as json_file:
         link = item
         source_node = link["fromNode"]
         destination_node = link["toNode"]
-        print(source_node, destination_node)
 
         if source_node < destination_node:
             g.addEdge(source_node, destination_node)
@@ -70,7 +69,7 @@ with open('topo_files/test_file_links.json') as json_file:
 
     dst = []
 
-    with open("topo_files/test_file_nodes.json") as dst_file:
+    with open("topo_files/T2/10_CRs_nodes_HC.json") as dst_file:
         json_dst = json.load(dst_file)
         nodes = json_dst["nodes"]
 
@@ -79,7 +78,6 @@ with open('topo_files/test_file_links.json') as json_file:
                 dst.append(item["nodeNumber"])
 
     for destination_node in dst:
-        print("calculando")
         k = 0
         g.printAllPaths(0, destination_node)
 
@@ -152,8 +150,6 @@ with open('paths.json', 'w') as json_file:
     count = 1
 
     for path in paths:
-
-        print(path)
 
         for position in range(0, len(path) - 1):
             if position == count:
@@ -262,7 +258,7 @@ with open('paths.json', 'w') as json_file:
     for iten in path_data:
         sum += 1
 
-    print(sum)
+    print("Total paths: {}".format(sum))
 
     json.dump(data, json_file, indent=4)
 

@@ -1,0 +1,54 @@
+{
+    "nodes": [
+      {
+        "nodeNumber": 1,
+        "cpu": 64,
+        "RU": 0
+      },
+      {
+        "nodeNumber": 2,
+        "cpu": 16,
+        "RU": 0
+      },
+      {
+        "nodeNumber": 3,
+        "cpu": 16,
+        "RU": 1
+      },
+      {
+        "nodeNumber": 4,
+        "cpu": 64,
+        "RU": 1
+      },
+      {
+        "nodeNumber": 5,
+        "cpu": 16,
+        "RU": 1
+      },
+      {
+        "nodeNumber": 6,
+        "cpu": 64,
+        "RU": 1
+      },
+      {
+        "nodeNumber": 7,
+        "cpu": 8,
+        "RU": 1
+      },
+      {
+        "nodeNumber": 8,
+        "cpu": 32,
+        "RU": 1
+      },
+      {
+        "nodeNumber": 9,
+        "cpu": 32,
+        "RU": 1
+      },
+      {
+        "nodeNumber": 10,
+        "cpu": 8,
+        "RU": 1
+      }
+    ]
+  }

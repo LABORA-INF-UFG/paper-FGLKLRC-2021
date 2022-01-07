@@ -1,0 +1,112 @@
+{
+    "links": [
+      {
+        "capacity": 400,
+        "delay": 0.163,
+        "fromNode": 0,
+        "toNode": 1
+      },
+      {
+        "capacity": 400,
+        "delay": 0.163,
+        "fromNode": 0,
+        "toNode": 2
+      },
+      {
+        "capacity": 100,
+        "delay": 0.22,
+        "fromNode": 1,
+        "toNode": 3
+      },
+      {
+        "capacity": 100,
+        "delay": 0.22,
+        "fromNode": 1,
+        "toNode": 4
+      },
+      {
+        "capacity": 100,
+        "delay": 0.22,
+        "fromNode": 1,
+        "toNode": 5
+      },
+      {
+        "capacity": 100,
+        "delay": 0.22,
+        "fromNode": 1,
+        "toNode": 6
+      },
+      {
+        "capacity": 100,
+        "delay": 0.22,
+        "fromNode": 2,
+        "toNode": 3
+      },
+      {
+        "capacity": 100,
+        "delay": 0.22,
+        "fromNode": 2,
+        "toNode": 4
+      },
+      {
+        "capacity": 100,
+        "delay": 0.22,
+        "fromNode": 2,
+        "toNode": 5
+      },
+      {
+        "capacity": 100,
+        "delay": 0.22,
+        "fromNode": 2,
+        "toNode": 6
+      },
+      {
+        "capacity": 50,
+        "delay": 0.174,
+        "fromNode": 3,
+        "toNode": 7
+      },
+      {
+        "capacity": 50,
+        "delay": 0.174,
+        "fromNode": 4,
+        "toNode": 7
+      },
+      {
+        "capacity": 50,
+        "delay": 0.174,
+        "fromNode": 3,
+        "toNode": 8
+      },
+      {
+        "capacity": 50,
+        "delay": 0.174,
+        "fromNode": 4,
+        "toNode": 8
+      },
+      {
+        "capacity": 50,
+        "delay": 0.174,
+        "fromNode": 5,
+        "toNode": 9
+      },
+      {
+        "capacity": 50,
+        "delay": 0.174,
+        "fromNode": 6,
+        "toNode": 9
+      },
+      {
+        "capacity": 50,
+        "delay": 0.174,
+        "fromNode": 5,
+        "toNode": 10
+      },
+      {
+        "capacity": 50,
+        "delay": 0.174,
+        "fromNode": 6,
+        "toNode": 10
+      }
+    ]
+  }
