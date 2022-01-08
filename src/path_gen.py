@@ -49,7 +49,7 @@ class Graph:
         self.printAllPathsUtil(s, d, visited, path)
 
 
-with open('topo_files/T2/T2_low_capacity.json') as json_file:
+with open('topo_files/T2/256_CRs_links_LC.json') as json_file:
     data = json.load(json_file)
 
     g = Graph(600)
@@ -69,7 +69,7 @@ with open('topo_files/T2/T2_low_capacity.json') as json_file:
 
     dst = []
 
-    with open("topo_files/T2/F1_low.json") as dst_file:
+    with open("topo_files/T2/256_CRs_nodes_LC.json") as dst_file:
         json_dst = json.load(dst_file)
         nodes = json_dst["nodes"]
 
