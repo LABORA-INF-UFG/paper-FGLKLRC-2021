@@ -49,7 +49,7 @@ class Graph:
         self.printAllPathsUtil(s, d, visited, path)
 
 
-with open('topo_files/T2/10_CRs_links_HC.json') as json_file:
+with open('topo_files/T2/16_CRs_links_RC.json') as json_file:
     data = json.load(json_file)
 
     g = Graph(600)
@@ -69,7 +69,7 @@ with open('topo_files/T2/10_CRs_links_HC.json') as json_file:
 
     dst = []
 
-    with open("topo_files/T2/10_CRs_nodes_HC.json") as dst_file:
+    with open("topo_files/T2/16_CRs_nodes_RC.json") as dst_file:
         json_dst = json.load(dst_file)
         nodes = json_dst["nodes"]
 
@@ -261,4 +261,3 @@ with open('paths.json', 'w') as json_file:
     print("Total paths: {}".format(sum))
 
     json.dump(data, json_file, indent=4)
-

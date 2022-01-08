@@ -205,7 +205,7 @@ def read_topology_T2():
     Implements the topology from reading the json file and creates the main structure that is used by the stages of the model.
     :rtype: Inserts topology data into global structures, so the method has no return
     """
-    with open('topo_files/T2/10_CRs_links_RC.json') as json_file:
+    with open('topo_files/T2/16_CRs_links_RC.json') as json_file:
         data = json.load(json_file)
 
         # Creates the set of links with delay and capacity read by the json file, stores the links in the global list "links"
@@ -228,7 +228,7 @@ def read_topology_T2():
                 links.append((destination_node, source_node))
 
         # Creates the set of CRs with RAM and CPU in a global list "crs" -- cr[0] is the network Core node
-        with open('topo_files/T2/10_CRs_nodes_RC.json') as json_file:
+        with open('topo_files/T2/16_CRs_nodes_RC.json') as json_file:
             data = json.load(json_file)
             json_nodes = data["nodes"]
             for item in json_nodes:
@@ -392,7 +392,7 @@ def RU_location_T2():
     rus = {}
     count = 1
     # Reads the topology file with RUs locations
-    with open('topo_files/T2/10_CRs_nodes_RC.json') as json_file:
+    with open('topo_files/T2/16_CRs_nodes_RC.json') as json_file:
         data = json.load(json_file)
 
         json_crs = data["nodes"]
@@ -453,6 +453,7 @@ def run_stage_1():
     mdl = Model(name='NGRAN Problem', log_output=True)
     # Set the GAP value (the model execution stop when GAP hits the value -- Default: 0%)
     mdl.parameters.mip.tolerances.mipgap = 0
+    mdl.parameters.emphasis.mip = 2
 
     # Tuple used by the decision variable management
     i = [(p, d, b) for p in paths for d in DRCs for b in rus if paths[p].seq[2] == rus[b].CR]
