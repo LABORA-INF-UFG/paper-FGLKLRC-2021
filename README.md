@@ -3,10 +3,11 @@
 
 This repository aims to demonstrate the **PlaceRAN: optimal placement of virtualized network functions in Beyond 5G radio access networks** model implementation.  In our tests we used the Ubuntu Server 18.04 and Ubuntu 20.04, with Python 3.6.9, docplex 2.20.204 and the IBM CPLEX version 12.8.0.
 
-- [Description](#topologies)
+- [Description](#description)
 - [Topologies](#topologies)
 - [Scenarios](#scenarios)
 - [Final Results](#final-results)
+- [Citation](#citation)
 
 ## Description
 This work proposes the first exact model for positioning radio functions for vNGRAN planning, named **PlaceRAN**, as a *Mixed-Integer Linear Programming (MILP)* problem. The objective is to minimize the computing resources and maximize the aggregation level of radio functions. The evaluation considered two realistic network topologies, named as T1 and T2. 
