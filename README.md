@@ -21,7 +21,7 @@ T1 topology represents a current ring based RAN deployment, with two CRs positio
 
 The T2 topology is a hierarchical topology, that are organized in layers, this kind of topologies shows a trend in the design of the future RAN topologies, being aligned with the most recent analysis. T2 topology has two CRs positioned close to the core network, in a centralized way, and the others 126 CRs are distributed in hierarchical layers.
 
-![topo_fig](https://github.com/LABORA-INF-UFG/paper-GLCK-2021/blob/main/topo_fig.png)
+![topo_fig](https://github.com/LABORA-INF-UFG/paper-FGLKLRC-2021/blob/main/topo_fig.png)
 
 ## Scenarios
 
