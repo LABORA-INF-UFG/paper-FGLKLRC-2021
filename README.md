@@ -10,7 +10,7 @@ This repository aims to demonstrate the **PlaceRAN: optimal placement of virtual
 - [Citation](#citation)
 
 ## Description
-This work proposes the first exact model for positioning radio functions for vNGRAN planning, named **PlaceRAN**, as a *Mixed-Integer Linear Programming (MILP)* problem. The objective is to minimize the computing resources and maximize the aggregation level of radio functions. The evaluation considered two realistic network topologies, named as T1 and T2. 
+This work proposes the first exact model for positioning radio functions for vNGRAN planning, named **PlaceRAN**, as a *Binary Integer Linear Programming (BILP)* problem. The objective is to minimize the computing resources and maximize the aggregation level of radio functions. The evaluation considered two realistic network topologies, named as T1 and T2. 
 
 This repository contains more informations about our model, the T1 and T2 topologies, the scenarios and about our final results.
 
@@ -39,7 +39,7 @@ To see the final results, i. e., the optimal solutions of each topology and/or t
 ## Citation
 
 ```
-@ARTICLE{morais-placeran:21,  
+@ARTICLE{morais-placeran:22,  
     author={Morais, Fernando Zanferrari and De Almeida, Gabriel Matheus Faria and Pinto, Leizer Lima and Cardoso, Kleber and Contreras, Luis M. and Righi, Rodrigo da Rosa and Both, Cristiano Bonato},
     journal={IEEE Transactions on Mobile Computing},   
     title={PlaceRAN: optimal placement of virtualized network functions in Beyond 5G radio access networks},   
