@@ -39,23 +39,14 @@ To see the final results, i. e., the optimal solutions of each topology and/or t
 ## Citation
 
 ```
-@article{DBLP:journals/corr/abs-2102-13192,
-  author    = {Fernando Zanferrari Morais and
-               Gabriel Matheus de Almeida and
-               Leizer de Lima Pinto and
-               Kleber Vieira Cardoso and
-               Luis M. Contreras and
-               Rodrigo da Rosa Righi and
-               Cristiano Bonato Both},
-  title     = {PlaceRAN: Optimal Placement for the Virtualized Next-Generation {RAN}},
-  journal   = {CoRR},
-  volume    = {abs/2102.13192},
-  year      = {2021},
-  url       = {https://arxiv.org/abs/2102.13192},
-  eprinttype = {arXiv},
-  eprint    = {2102.13192},
-  timestamp = {Thu, 05 Aug 2021 08:50:01 +0200},
-  biburl    = {https://dblp.org/rec/journals/corr/abs-2102-13192.bib},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+@ARTICLE{morais-placeran:21,  
+    author={Morais, Fernando Zanferrari and De Almeida, Gabriel Matheus Faria and Pinto, Leizer Lima and Cardoso, Kleber and Contreras, Luis M. and Righi, Rodrigo da Rosa and Both, Cristiano Bonato},
+    journal={IEEE Transactions on Mobile Computing},   
+    title={PlaceRAN: optimal placement of virtualized network functions in Beyond 5G radio access networks},   
+    year={2022},  
+    volume={},  
+    number={},  
+    pages={1-1},  
+    doi={10.1109/TMC.2022.3171525}
 }
 ```
